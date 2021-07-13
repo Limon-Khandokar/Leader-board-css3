@@ -99,6 +99,11 @@
 }
 .course{
     width: 253px;
+    
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px lightgray;
+    padding: 14px 13px;
 
 }
 .course .course-banner img{
@@ -135,3 +140,45 @@
 
     
 }
+
+/*-----------------
+ Media Queries 
+ -------------------*/
+  @media only screen and (max-width:688px) {
+     .container{
+         width: 100%;
+     }
+     .players, .blogs,.courses{
+         
+         grid-template-columns: repeat(1,1fr
+         );
+
+     }
+     .player,.blog{
+         flex-direction: column;
+     } 
+     
+     
+ }
+ /*--------
+  Tablet Devices 
+  -----------------*/
+   @media only screen and (min-width:688px) and 
+  (max-width:992px) {
+       .container{ 
+          width: 100%;
+      }
+      
+      
+       .players,.courses{
+           /* background-color: yellowgreen; */
+            grid-template-columns: repeat(2,1fr
+           );
+
+       }
+        .blogs{
+           grid-template-columns: repeat(1,1fr
+           );
+       }
+       
+  } 
